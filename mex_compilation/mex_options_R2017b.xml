@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config
+    Name="Clang++"
+    ShortName="Clang"
+    Revision="1.0"
+    HostArch="maca64"
+    TargetArch="maca64"
+    >
+    <Details
+        CompilerExecutable="$XCRUN_DIR/xcrun"
+        CompilerArguments="-sdk macosx clang++"
+        LinkerExecutable="$XCRUN_DIR/xcrun"
+        LinkerArguments="-sdk macosx clang++"
+        Language="C++"
+        />
+    <Client>
+        <LINKEXPORTVER>-Wl,-exported_symbols_list,"$MATLABROOT/extern/lib/$ARCH/mexFunction.map"</LINKEXPORTVER>
+        <LINKEXPORTVER>-Wl,-exported_symbols_list,"$MATLABROOT/extern/lib/$ARCH/c_exportsmexfileversion.map"</LINKEXPORTVER>
+    </Client>
+</config>
