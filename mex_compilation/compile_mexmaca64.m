@@ -14,6 +14,7 @@ mysql_include = fullfile(mysql_base, 'include');
 mysql_platform_include = fullfile(mysql_base, ['include_' mexext()]);
 mysql_lib = fullfile(mysql_base, ['lib_' mexext()]);
 mariadb_lib = fullfile(mym_base, ['maria-plugin/','lib_',mexext()]);
+lib_lib = fullfile(mym_base, ['lib/',mexext()]);
 
 mkdir(build_out);
 mkdir(distrib_out);
@@ -118,3 +119,4 @@ copyfile(['mym.' mexext()], distrib_out, 'f');
 copyfile(fullfile(mym_src, 'mym.m'), distrib_out, 'f');
 copyfile(fullfile(mysql_lib, 'libmysqlclient*'), distrib_out, 'f');
 copyfile(fullfile(mariadb_lib, 'dialog.so'), distrib_out, 'f');
+copyfile(fullfile(lib_lib, '*'), distrib_out, 'f');
