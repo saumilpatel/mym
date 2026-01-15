@@ -82,3 +82,9 @@ MYSQL_TAG=5.7
 2. Navigate in MATLAB tree browser to saved toolbox file
 3. Right-Click and Select *Install*
 4. Select *Install*
+
+
+### For Apple Silicon Mac
+1. Download the zip file
+2. Move the zip file to /Users/Saumil/Library/Application Support/MathWorks/MATLAB Add-Ons/Toolboxes/ folder
+3. unzip
